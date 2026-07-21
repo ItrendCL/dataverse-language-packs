@@ -5,6 +5,19 @@ Some language packages are only available for older versions, to get the latest 
 
 API Documentation for deploying language files is still under development.
 
+## Itrend deployment branches
+
+Itrend maintains environment branches on top of the upstream Dataverse version
+branch used by DPR:
+
+- `dev` is consumed by the `dev` and `test` builds of `ItrendCL/dpr-dataverse`.
+- `main` is consumed by the production build of `ItrendCL/dpr-dataverse`.
+
+Changes from a new upstream `dataverse-v*` branch are integrated into `dev`
+first. After the language bundles have been validated in DPR, `dev` is promoted
+to `main`. The initial DPR language set is `en_US` and `es_ES`; additional
+locale directories can be enabled through the manifest in `dpr-dataverse`.
+
 Please Note: These transalations are provided as is. If you see any problems, please open an issue and/or contact the organization listed below as the maintainer of the translation.
 
 Available languages:
