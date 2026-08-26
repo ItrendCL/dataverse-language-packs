@@ -10,14 +10,14 @@ passwd=Contraseña
 # weird to have only "Dataset" capitalized in the facet but not "software" and
 # "workflow". This capitalization (looking up here in the bundle) is done by
 # SearchServiceBean near the comment "This is where facets are capitalized".
-dataset=Conjunto de datos
+dataset=Dataset
 software=Software
 workflow=Flujo de trabajo
 review=Revisión
 # END dataset types
-datasets=Conjuntos de datos
+datasets=Datasets
 newDataset=Nuevo dataset
-files=Archivos
+files=Ficheros
 file=Fichero
 public=Público
 restricted=Restringido
@@ -32,10 +32,10 @@ valid=Válido
 find=Buscar
 search=Buscar
 language=Idioma
-created=Created
-deposited=Deposited
+created=Creado
+deposited=Depositado
 published=Publicado
-metadatareleased=Metadata Released
+metadatareleased=Metadatos liberados
 unpublished=Sin publicar
 embargoed.until=Embargado hasta
 embargoed.wasthrough=fue embargado hasta
@@ -66,7 +66,7 @@ description=Descripción
 subject=Materia
 close=Cerrar
 preview=Vista previa
-query=Query
+query=Pregunta
 continue=Continuar
 name=Nombre
 institution=Institución
@@ -85,14 +85,14 @@ manager=Administrador
 curator=Conservador/revisor
 explore=Explorar
 download=Descargar
-transfer=Globus Transfer
+transfer=Transferencia Globus
 downloadOriginal=Formato Original
 downloadArchival=Formato de Archivo (.tab)
 deaccession=Retirada
 share=Compartir
 link=Enlazar
 linked=Enlazado
-harvested=Recolectado
+harvested=Procedente de un repositorio externo
 apply=Aplicar
 add=Añadir
 delete=Borrar
@@ -112,7 +112,7 @@ less=Menos...
 select=Seleccionar...
 selectedFiles=Ficheros seleccionados
 htmlAllowedTitle=Etiquetas HTML permitidas
-htmlAllowedMsg=Este campo s\u00f3lo admite algunas <a class="popoverHTML" tabindex="0" role="button">etiquetas HTML</a>.
+htmlAllowedMsg=Este campo solo admite algunas <a class="popoverHTML" tabindex="0" role="button">etiquetas HTML</a>.
 htmlAllowedTags=&lt;a&gt;, &lt;b&gt;, &lt;blockquote&gt;, &lt;br&gt;, &lt;code&gt;, &lt;del&gt;, &lt;dd&gt;, &lt;dl&gt;, &lt;dt&gt;, &lt;em&gt;, &lt;hr&gt;, &lt;h1&gt;-&lt;h3&gt;, &lt;i&gt;, &lt;img&gt;, &lt;kbd&gt;, &lt;li&gt;, &lt;ol&gt;, &lt;p&gt;, &lt;pre&gt;, &lt;s&gt;, &lt;sup&gt;, &lt;sub&gt;, &lt;strong&gt;, &lt;strike&gt;, &lt;u&gt;, &lt;ul&gt;
 conditionalRequiredMsg=Al menos uno de estos campos pueden convertirse en obligatorios si añade alguno de estos campos opcionales
 conditionalRequiredMsg.tooltip=Este campo serás obiligatorio si elige introducir valores en alguno de estos campos opcionales.
@@ -128,7 +128,7 @@ alt.homepage=Página de inicio de {0}
 # dataverse_header.xhtml
 header.noscript=Por favor, habilite el JavaScript en su navegador. Es necesario para la mayoría de las funcionalidades de Dataverse.
 header.status.header=Estado
-header.search.title=Buscar...
+header.search.title=Buscar en todos los dataverses...
 header.about=Acerca de
 header.support=Ayuda
 header.guides=Guías
@@ -148,7 +148,7 @@ header.user.selectTab.groupsAndRoles=Grupos + roles
 header.user.selectTab.apiToken=Token del API
 
 # dataverse_template.xhtml
-head.meta.description=El proyecto Dataverse es una aplicaci\u00f3n basada en software libre para compartir, citar y archivar datos. Dataverse proporciona a los administradores de datos una infraestructura robusta para administrar, alojar y archivar datos, a la vez que ofrece a los investigadores una forma sencilla de compartir y obtener reconocimiento por sus datos.
+head.meta.description=El proyecto Dataverse es una aplicación de código abierto para compartir, citar y archivar datos. Dataverse proporciona a los administradores de datos una infraestructura robusta para administrar, alojar y archivar datos, a la vez que ofrece a los investigadores una forma sencilla de compartir y obtener reconocimiento por sus datos.
 body.skip=Ir al contenido principal
 
 # dataverse_footer.xhtml
@@ -168,8 +168,8 @@ messages.validation.msg=Había campos obligatorios sin rellenar o hubo un error 
 
 # contactFormFragment.xhtml
 contact.header=Contactar con {0}
-contact.dataverse.header=Contactar con la colecci\u00f3n
-contact.dataset.header=Contactar con responsable del dataset
+contact.dataverse.header=e-mail de contacto del dataverse
+contact.dataset.header=e-mail del contacto del dataset
 contact.to=Para
 contact.cc=CC
 contact.support=Soporte
@@ -179,14 +179,14 @@ contact.from.invalid=El e-mail no es válido.
 contact.from.emailPlaceholder=nombre@email.xyz
 contact.subject=Asunto
 contact.subject.required=El asunto es obligatorio.
-contact.subject.selectTab.top=Selecciona un asunto...
-contact.subject.selectTab.support=Consulta de soporte
-contact.subject.selectTab.dataIssue=Problema con datos
+contact.subject.selectTab.top=Seleccionar asunto...
+contact.subject.selectTab.support=Pregunta de soporte
+contact.subject.selectTab.dataIssue=Problema con los datos
 contact.msg=Mensaje
-contact.msg.required=El mensaje es obligatorio.
+contact.msg.required=El texto del mensaje es obligatorio.
 contact.send=Enviar mensaje
-contact.question=Completa esto para confirmar que no eres un robot.
-contact.sum.title=Respuesta de validaci\u00f3n humana
+contact.question=Por favor, rellena este campo para demostrar que no eres un robot.
+contact.sum.title=Pregunta para verificar el acceso por personas
 contact.sum.required=El valor es obligatorio.
 contact.sum.invalid=Suma errónea. Por favor, prueba otra vez.
 contact.sum.converterMessage=Por favor, introduce un número.
@@ -206,7 +206,7 @@ contact.context.file.intro={0}\n\nHa enviado el siguiente mensaje de {1} usando 
 contact.context.file.ending=\n\n---\n\n{0}\n{1}\n\nIr al fichero {2}/file.xhtml?fileId={3}\n\nHa recibido este e-mail porque aparece como contacto para el dataset. Si cree que ha sido un error, puede ponerse en contacto con {4} arroba {5}. Para responder directamente a quién envió este mensaje, puede responder a este e-mail.
 contact.context.support.intro={0},\n\nEl siguiente mensaje lo envió {1}.\n\n---\n\n
 contact.context.support.ending=\n\n---\n\nMensaje enviado desde el formulario de contacto de soporte.
-contact.sent=Message sent.
+contact.sent=Mensaje enviado.
 
 # dataverseuser.xhtml
 account.info=Información de la cuenta
@@ -230,7 +230,7 @@ wasCreatedIn=, fue creado el
 wasCreatedTo=, fue añadido a
 wasSubmittedForReview=, fue enviado a revisión para su publicación el
 wasPublished=, fue publicado el
-wasReturnedByReviewer=, was returned by the curator of
+wasReturnedByReviewer=, fue devuelto por el conservador/revisor de
 # TODO: Confirm that "toReview" can be deleted.
 toReview=¡No olvide publicarlo o devolverlo al colaborador!
 # Bundle file editors, please note that "notification.welcome" is used in a unit test.
@@ -238,7 +238,7 @@ notification.welcome=¡Bienvenido a {0}!. Puede empezar buscando o añadiendo da
 notification.welcomeConfirmEmail=También compruebe su e-mail de bienvenida para comprobar su dirección.
 notification.demoSite=Portal de pruebas.
 notification.requestFileAccess=Solicitud de acceso al dataset: {0} realizada por {1} ({2}).
-notification.requestedFileAccess=You have requested access to files in dataset: {0}.
+notification.requestedFileAccess=Ha solicitad acceso a ficheros en el dataset: {0}.
 notification.grantFileAccess=Acceso permitido para los ficheros del dataset: {0}.
 notification.rejectFileAccess=Acceso denegado para los ficheros del dataset: {0}.
 notification.createDataverse=Se creó {0} en {1}. Para saber más sobre lo que puede hacer con su dataverse, puede ver {2}.
@@ -263,7 +263,7 @@ notification.ingestCompletedWithErrors=El dataset <a href="/dataset.xhtml?persis
 notification.generic.objectDeleted=El dataverse, dataset o fichero relacionado con esta notificación se ha eliminado.
 notification.access.granted.dataverse=Tienes asignado el rol {0} para {1}.
 notification.access.granted.dataset=Tienes asignado el rol {0} para {1}.
-notification.access.granted.datafile=You have been granted the {0} role for file in {1}.
+notification.access.granted.datafile=Tienes asignado el rol {0} para acceso a ficheros en {1}.
 notification.access.granted.fileDownloader.additionalDataverse={0} Ahora tiene acceso a todos los ficheros publicados, tanto restringidos como sin restricciones, de este dataverse.
 notification.access.granted.fileDownloader.additionalDataset={0} Ahora tiene acceso a todos los ficheros publicados, tanto restringidos como sin restricciones, de este dataset.
 notification.access.revoked.dataverse=Se le ha dado de baja de un rol en {0}.
@@ -359,7 +359,7 @@ user.acccountterms.required=Por favor, seleccione la casilla de selección para 
 user.acccountterms.iagree=He leído y acepto las Condiciones generales de uso de Dataverse antes citadas.
 user.createBtn=Crear cuenta
 user.updatePassword.welcome=Bienvenido a Dataverse {0}
-user.updatePassword.warning=Nuestros t\u00e9rminos de uso han cambiado. Marca la casilla de abajo y haz clic en Continuar.
+user.updatePassword.warning=Nuestras condiciones de uso han cambiado. Por favor, marque la siguiente casilla y pulse en "Continuar"
 user.updatePassword.password={0}
 user.password=Contraseña
 user.newPassword=Nueva contraseña
@@ -443,7 +443,7 @@ auth.providers.insufficientScope=Dataverse no tiene permisos para leer datos de 
 auth.providers.exception.userinfo=Error al obtener la información del usuario de {0}.
 auth.providers.token.failRetrieveToken=Dataverse no recuperó el token de acceso.
 auth.providers.token.failParseToken=Dataverse no pudo analizar el token de acceso.
-auth.providers.token.failGetUser=Dataverse no puede acceder a tu registro de usuario. Puede consultar al administrador del sistema.
+auth.providers.token.failGetUser=Dataverse no puede acceder a su registro de usuario. Puede consultar al administrador del sistema.
 auth.providers.orcid.helpmessage1=ORCID is an open, non-profit, community-based effort to provide a registry of unique researcher identifiers and a transparent method of linking research activities and outputs to these identifiers. ORCID is unique in its ability to reach across disciplines, research sectors, and national boundaries and its cooperation with other identifier systems. Find out more at <a href="https://orcid.org/about" title="About ORCID" target="_blank" rel="noopener">orcid.org/about</a>.
 auth.providers.orcid.helpmessage2=Este repositorio usa su ORCID para la autentifación (así que no necesita otra combinación de usuario/contraseña). Tener su ORCID asociado con sus datasets facilita la búsqueda de datasets que ha publicado.
 
@@ -453,7 +453,7 @@ authenticationProvider.name.null=(proveedor desconocido)
 authenticationProvider.name.github=GitHub
 authenticationProvider.name.google=Google
 authenticationProvider.name.orcid=ORCiD
-authenticationProvider.name.orcid-sandbox=Sandbox ORCID
+authenticationProvider.name.orcid-sandbox=Sandbox ORCID 
 authenticationProvider.name.shib=Shibboleth
 
 #confirmemail.xhtml
@@ -533,7 +533,7 @@ oauth2.callback.error.accountNotFound=Debe identificarse para asociar un ORCID a
 oauth2.callback.error.orcidInUse=El ORCID ({0}) ya está asociado con otra cuenta de usuario.
 
 # deactivated user accounts
-deactivated.error=Sorry, your account has been deactivated.
+deactivated.error=Lo siento, su cuenta ha sido desactivada
 
 # tab on dataverseuser.xhtml
 apitoken.title=Token del API
@@ -604,7 +604,7 @@ harvestclients.newClientDialog.customHeader.helptext=(Opcional) Cabecera HTTP pe
 harvestclients.newClientDialog.customHeader.watermark=Introduzca una cabecera http de la forma nombre-cabecera: valor-cabecera
 harvestclients.newClientDialog.customHeader.invalid=El nombre de la cabecera solo puede tener letras, números, subrayados (_) y guiones (-); La cadena completa de la cabecera debe de tener la forma "nombre-cabecera: valor-cabecera"
 harvestclients.newClientDialog.type=Protocolo del servidor
-harvestclients.newClientDialog.type.helptext=Actualmente, s\u00f3lo se soporta el protocolo OAI.
+harvestclients.newClientDialog.type.helptext=Actualmente, solo se soporta el protocolo OAI.
 harvestclients.newClientDialog.type.OAI=OAI
 harvestclients.newClientDialog.type.Nesstar=Nesstar
 harvestclients.newClientDialog.url=URL del servidor
@@ -690,8 +690,8 @@ harvestserver.tab.header.description=Descripción
 harvestserver.tab.header.definition=Query de definición
 harvestserver.tab.col.definition.default=Todos los datasets locales publicados
 harvestserver.tab.header.stats=Datasets
-harvestserver.tab.col.stats.empty=No ha registros (set vaci\u00f3)
-harvestserver.tab.col.stats.results={0} {0, choice, 0#datasets|1#dataset|2#datasets} ({1} {1, choice, 0#registros|1#registro|2#registros} exportado, {2} marcado como borrado)
+harvestserver.tab.col.stats.empty=No hay registros activos ({2} {2, choice, 0#records|1#record|2#records} marcados como borrados)
+harvestserver.tab.col.stats.results={0} {0, choice, 0#datasets|1#dataset|2#datasets} ({1} {1, choice, 0#registros|1#registro|2#registros} exportado(s), {2} marcado como borrado)
 harvestserver.tab.header.action=Acciones
 harvestserver.tab.header.action.btn.export=Ejecutar exportar
 harvestserver.actions.runreexport.success=Se ha iniciado un trabajo asíncrono de re-exportación para el set OAI "{0}" (puede recargar la página para comprobar el progreso de la exportación)
@@ -728,7 +728,7 @@ harvestserver.newSetDialog.btn.create=Crear set
 harvestserver.newSetDialog.success=Se ha creado el set de recolección "{0}".
 harvestserver.viewEditDialog.title=Editar set de recolección
 harvestserver.viewEditDialog.btn.save=Guardar cambios
-harvestserver.deleteSetDialog.setspec.superUser.required=Only superusers may delete OAI sets.
+harvestserver.deleteSetDialog.setspec.superUser.required=Solo los superusuarios pueden eliminar los sets OAI.
 
 #dashboard-users.xhtml
 dashboard.card.users=Usuarios
@@ -741,12 +741,12 @@ dashboard.list_users.tbl_header.userId=ID
 dashboard.list_users.tbl_header.userIdAZ=ID (A-Z)
 dashboard.list_users.tbl_header.userIdZA=ID (Z-A)
 dashboard.list_users.tbl_header.userIdentifier=Nombre de usuario
-dashboard.list_users.tbl_header.userIdentifierAZ=Username (A-Z)
-dashboard.list_users.tbl_header.userIdentifierZA=Username (Z-A)
+dashboard.list_users.tbl_header.userIdentifierAZ=Nombre de usuario (A-Z)
+dashboard.list_users.tbl_header.userIdentifierZA=Nombre de usuario (Z-A)
 dashboard.list_users.tbl_header.name=Nombre
 dashboard.list_users.tbl_header.lastName=Apellidos
-dashboard.list_users.tbl_header.lastNameAZ=Last Name (A-Z)
-dashboard.list_users.tbl_header.lastNameZA=Last Name (Z-A)
+dashboard.list_users.tbl_header.lastNameAZ=Apellidos (A-Z)
+dashboard.list_users.tbl_header.lastNameZA=Apellidos (Z-A)
 dashboard.list_users.tbl_header.firstName=Nombre
 dashboard.list_users.tbl_header.email=E-mail
 dashboard.list_users.tbl_header.emailAZ=Email (A-Z)
@@ -895,7 +895,7 @@ notification.email.globus.uploadCompletedWithErrors.subject={0}: Completada la t
 notification.email.globus.uploadFailedRemotely.subject={0}: Falló la subida de ficheros vía Globus
 notification.email.globus.uploadFailedLocally.subject={0}:  Falló la adición de ficheros subidos vía Globus al dataset
 # dataverse.xhtml
-dataverse.name=Nombre del datverse
+dataverse.name=Nombre del dataverse
 dataverse.name.title=El proyecto, departamento, universidad o profesor propietario de los datos de este dataverse.
 dataverse.enterName=Introduzca el nombre...
 dataverse.host.title=El dataverse que contiene estos datos.
@@ -927,7 +927,7 @@ dataverse.email.title=La(s) dirección(es) de e-mail de los contactos para el da
 dataverse.share.dataverseShare=Compartir dataverse
 dataverse.share.dataverseShare.tip=Compartir este dataverse en sus redes sociales favoritas.
 dataverse.share.dataverseShare.shareText=Ver este dataverse.
-dataverse.subject.title=Materia(s) cubiertas en este dataverse.
+dataverse.subject.title=Materia(s) cubierta(s) por este dataverse.
 dataverse.metadataElements=Campos de metadatos
 dataverse.metadataElements.tip=Elija un campo de metadatos para usar en las plantillas del dataset y cuando se añada un dataset a este dataverse.
 dataverse.metadataElements.from.tip=Usar campos de metadatos desde {0}
@@ -946,7 +946,7 @@ dataverse.facetPickList.metadataBlockList.all=Todos los campos de metadatos
 dataverse.edit=Editar
 dataverse.option.generalInfo=Información general
 dataverse.option.themeAndWidgets=Tema + widgets
-dataverse.option.featuredDataverse=Colecciones Destacadas
+dataverse.option.featuredDataverse=Dataverses destacados
 dataverse.option.permissions=Permisos
 dataverse.option.dataverseGroups=Grupos
 dataverse.option.datasetTemplates=Plantillas de dataset
@@ -955,7 +955,7 @@ dataverse.option.deleteDataverse=Eliminar dataverse
 dataverse.publish.btn=Publicar
 dataverse.publish.header=Publicar dataverse
 dataverse.nopublished=Dataverses sin publicar
-dataverse.nopublished.tip=Para usar esta funcionalidad ha de tener publicado al menos un dataverse.
+dataverse.nopublished.tip=Para usar esta funcionalidad ha de tener publicado o enlazado al menos un dataverse.
 dataverse.contact=Enviar e-mail al Contacto del dataverse
 dataverse.link=Enlace al dataverse
 dataverse.link.btn.tip=Enlace a su dataverse
@@ -1065,7 +1065,7 @@ advanced.search.files.persistentId=ID persistente del fichero de datos
 advanced.search.files.persistentId.tip=El identificador único y persistente para un fichero.
 advanced.search.files.fileType=Tipo de fichero
 advanced.search.files.fileType.tip=Tipo de fichero, ej: CSV, texto plano, R, etc.
-advanced.search.files.variableName=Nombre de Variable
+advanced.search.files.variableName=Nombre de variable
 advanced.search.files.variableName.tip=El nombre de la columna de la variable en el marco de los datos.
 advanced.search.files.variableLabel=Etiqueta de la variable
 advanced.search.files.variableLabel.tip=Una descripción corta de la variable.
@@ -1096,7 +1096,7 @@ dataverse.results.dialog.addDataGuest.signup.title=Cree una cuenta en Dataverse
 dataverse.results.dialog.addDataGuest.login.title=Identifíquese con su cuenta de Dataverse
 dataverse.results.types.dataverses=Dataverses
 dataverse.results.types.datasets=Datasets
-dataverse.results.types.files=Archivos
+dataverse.results.types.files=Ficheros
 dataverse.results.btn.filterResults=Filtrar resultados
 # Bundle file editors, please note that "dataverse.results.empty.zero" is used in a unit test
 dataverse.results.empty.zero=No hay dataverses, datasets o ficheros que concuerden con su búsqueda. Por favor, busque de nuevo usando otras palabras o términos más generales. También puede probar los consejos de la <a href="{0}/{1}/user/find-use-data.html" title="Búsqueda y uso de datos - Guía de uso de dataverse" target="_blank">guía de búsqueda</a>.
@@ -1123,7 +1123,7 @@ dataverse.results.btn.sort.option.nameZA=Nombre (Z-A)
 dataverse.results.btn.sort.option.newest=Más nuevos
 dataverse.results.btn.sort.option.oldest=Más antiguos
 dataverse.results.btn.sort.option.relevance=Relevancia
-dataverse.results.cards.foundInMetadata=Encontrado en campos de metadatos:
+dataverse.results.cards.foundInMetadata=Encontrados en campos de metadatos:
 dataverse.results.cards.files.tabularData=Datos tabulares
 dataverse.results.solrIsDown=Nota: Debido a un error interno, la búsqueda y la navegación no están disponibles.
 dataverse.results.solrIsTemporarilyUnavailable=El servicio de motor de búsqueda (Solr) no está disponible temporalmente debido a la alta carga. Por favor, inténtelo de nuevo más tarde.
@@ -1153,7 +1153,7 @@ dataverse.theme.success=¡Has actualizado el tema de este dataverse con éxito!
 dataverse.theme.failure=El tema del dataverse no se ha actualizado.
 dataverse.theme.logo.image=Imagen del logo
 dataverse.theme.logo.imageFooter=Imagen del pie
-dataverse.theme.logo.imageThumbnail=Thumbnail Image
+dataverse.theme.logo.imageThumbnail=Imagen para miniatura
 dataverse.theme.logo.image.title=El logo o fichero de imagen que quiere poner en la cabecera de este dataverse.
 dataverse.theme.logo.image.footer=El logo o fichero de imagen que quiere poner en el pie de este dataverse.
 dataverse.theme.logo.image.thumbnail=El logo o fichero de imagen que le gustaría mostrar en la colección destacada de este dataverse.
@@ -1196,9 +1196,9 @@ dataverse.widgets.advanced.url.watermark=http://www.example.com/page-name
 dataverse.widgets.advanced.invalid.message=Por favor, introduzca una URL válida
 dataverse.widgets.advanced.success.message=La URL de su portal web se ha actualizado con éxito
 dataverse.widgets.advanced.failure.message=La URL de su portal web no se ha actualizado.
-facet.collection.label=Toggle Collections
-facet.dataset.label=Toggle Data Projects
-facet.datafile.label=Toggle Files
+facet.collection.label=Mostrar/ocultar colecciones
+facet.dataset.label=Mostrar/ocultar proyectos de datos
+facet.datafile.label=Mostrar/ocultar ficheros
 
 # permissions-manage.xhtml
 dataverse.permissions.title=Permisos
@@ -1244,7 +1244,7 @@ dataverse.permissionsFiles.usersOrGroups.tabHeader.id=ID
 dataverse.permissionsFiles.usersOrGroups.tabHeader.email=E-mail
 dataverse.permissionsFiles.usersOrGroups.tabHeader.authentication=Autentificación
 dataverse.permissionsFiles.usersOrGroups.tabHeader.files=Ficheros
-dataverse.permissionsFiles.usersOrGroups.tabHeader.accessRequestDate=Date
+dataverse.permissionsFiles.usersOrGroups.tabHeader.accessRequestDate=Fecha
 dataverse.permissionsFiles.usersOrGroups.tabHeader.accessRequestDateNotAvailable=N/A
 dataverse.permissionsFiles.usersOrGroups.tabHeader.access=Acceso
 dataverse.permissionsFiles.usersOrGroups.file=Fichero
@@ -1358,7 +1358,7 @@ dataset.manageTemplates.tab.action.btn.makeDefault=Hacer por defecto
 dataset.manageTemplates.tab.action.btn.default=Por defecto
 dataset.manageTemplates.tab.action.btn.view=Ver
 dataset.manageTemplates.tab.action.btn.copy=Copiar
-dataset.manageTemplates.tab.action.btn.edit=Editar
+dataset.manageTemplates.tab.action.btn.edit=Editar plantilla
 dataset.manageTemplates.tab.action.btn.edit.metadata=Metadatos
 dataset.manageTemplates.tab.action.btn.edit.terms=Condiciones
 dataset.manageTemplates.tab.action.btn.delete=Eliminar
@@ -1373,7 +1373,7 @@ dataset.message.manageTemplates.label=Administrar plantillas de datasets
 dataset.message.manageTemplates.message=Crear una plantilla con campos de metadatos rellenos con valores por defecto, como puede ser la afiliación del autor; o añadir instrucciones en los campos de metadatos para dar a los depositantes más información sobre como rellenar dichos campos.
 
 # metadataFragment.xhtml
-dataset.anonymized.withheld=withheld
+dataset.anonymized.withheld=retenido
 
 dataset.metadatalanguage.create.guidance=Por favor, introduzca los metadatos en el idioma <b>{0}</b>, o cambie el idioma de los metadatos en dataverse padre antes de continuar.
 dataset.metadatalanguage.view.guidance=Este dataset se ha configurado para usar <b>{0}</b> como idioma para todas las entradas de los metadatos.
@@ -1423,9 +1423,9 @@ dataverse.manageGroups.tab.action.btn.view.dialog.enterName=Introduce el nombre 
 dataverse.manageGroups.tab.action.btn.view.dialog.invalidMsg=No se encontraron coincidencias.
 
 # manage-guestbooks.xhtml
-dataset.manageGuestbooks.pageTitle=Administrar libros de invitados del dataset
-dataset.manageGuestbooks.include=Incluir libros de invitados desde {0}
-dataset.manageGuestbooks.createBtn=Crear libros de invitados del dataset
+dataset.manageGuestbooks.pageTitle=Administrar libros de visitas del dataset
+dataset.manageGuestbooks.include=Incluir libros de visitas desde {0}
+dataset.manageGuestbooks.createBtn=Crear libros de visitas del dataset
 dataset.manageGuestbooks.download.all.responses=Descargar todas las respuestas
 dataset.manageGuestbooks.download.responses=Descargar respuestas
 dataset.manageGuestbooks.noGuestbooks.why.header=¿Por qué usar libros de visitas?
@@ -1475,14 +1475,14 @@ dataset.guestbooksResponses.type=Tipo
 dataset.guestbooksResponses.file=Fichero
 dataset.guestbooksResponses.customQuestions=Preguntas Personalizadas
 dataset.guestbooksResponses.user=Usuario
-dataset.guestbooksResponses.tip.title=Respuestas del libro de invitados
+dataset.guestbooksResponses.tip.title=Respuestas del libro de visitas
 dataset.guestbooksResponses.count.responses={0} {0, choice, 0#Respuestas|1#Respuesta|2#Respuestas}
 dataset.guestbooksResponses.count.toofresults={0} to {1} of {2} {2, choice, 0#Respuestas|1#Respuesta|2#Respuestas}
 dataset.guestbooksResponses.tip.downloadascsv=Pinche en \"Descargar respuestas\" para descargar todas las respuestas recogidas para este libro de visitas, en formato CSV. Para analizar y navegar por sus respuestas recolectadas, le recomendamos importar este fichero csv en Excel, Hojas de cálculo de Google o un programa similar.
 dataset.guestbooksResponses.tooManyResponses.message=Atención: este libro de visitas tiene demasiadas respuestas para mostrarlas en esta página. Solo se muestran las {0} más recientes. Pulse en \"Descargar respuestas\" para descargar todas las respuestas recolectadas ({1} total) como un fichero CSV.
 
 # guestbook-responses.xhtml
-dataset.guestbookResponses.pageTitle=Ver respuestas del libro de invitados
+dataset.guestbookResponses.pageTitle=Ver respuestas del libro de visitas
 
 # guestbook.xhtml
 dataset.manageGuestbooks.guestbook.name=Nombre del libro de visitas
@@ -1529,16 +1529,16 @@ dataset.accessBtn.header.configure=Opciones de configuración
 dataset.accessBtn.header.compute=Opciones de proceso
 dataset.accessBtn.download.size=ZIP ({0})
 dataset.accessBtn.transfer.size=({0})
-dataset.accessBtn.too.big=The dataset is too large to download. Please select the files you need from the files table.
-dataset.accessBtn.original.too.big=The dataset is too large to download in the original format. Please select the files you need from the files table.
-dataset.accessBtn.archival.too.big=The dataset is too large to download in the archival format. Please select the files you need from the files table.
-dataset.linkBtn=Link Dataset
-dataset.unlinkBtn=Unlink Dataset
-dataset.contactBtn=Contactar propietario
-dataset.shareBtn=Share
+dataset.accessBtn.too.big=El dataset es demasiado grande para descargarse. Por favor, seleccione los ficheros que necesite de la tabla de ficheros.
+dataset.accessBtn.original.too.big=El dataset es demasiado grande para descargarse en su formato original. Por favor, seleccione los ficheros que necesite de la tabla de ficheros.
+dataset.accessBtn.archival.too.big=El dataset es demasiado grande para descargarse en su formato de archivo. Por favor, seleccione los ficheros que necesite de la tabla de ficheros.
+dataset.linkBtn=Enlazar dataset
+dataset.unlinkBtn=Quitar enlace al Dataset
+dataset.contactBtn=Contactar con el propietario
+dataset.shareBtn=Compartir
 
-dataset.publishBtn=Publish Dataset
-dataset.editBtn=Editar
+dataset.publishBtn=Publicar dataset
+dataset.editBtn=Editar dataset
 
 dataset.changestatus=Cambiar el estado de gestión y cuidado (curation)
 dataset.removestatus=Eliminar el estado actual
@@ -1554,7 +1554,7 @@ dataset.editBtn.itemLabel.deleteDataset=Eliminar dataset
 dataset.editBtn.itemLabel.deleteDraft=Eliminar versión preliminar
 dataset.editBtn.itemLabel.deaccession=Eliminar acceso al dataset
 dataset.exportBtn=Exportar metadatos
-dataset.exportBtn.itemLabel.ddi=DDI
+dataset.exportBtn.itemLabel.ddi=DDI Codebook v2
 dataset.exportBtn.itemLabel.dublinCore=Dublin core
 dataset.exportBtn.itemLabel.schemaDotOrg=Schema.org JSON-LD
 dataset.exportBtn.itemLabel.datacite=DataCite
@@ -1586,7 +1586,7 @@ metrics.file.downloads.nonmdc.tip=Descargas totales. Debido a las diferencias en
 metrics.views={0, choice, 0#Visualizaciones|1#Visualización|2#Visualizaciones}
 metrics.downloads={0, choice, 0#Descargas|1#Descarga|2#Descargas}
 metrics.downloads.nonMDC={0, choice, 0#|1# (+ 1 pre-MDC |2< (+ {0} pre-MDC }
-metrics.citations={0, choice, 0#Citas|1#Cita|2#Citas}
+metrics.citations={0, choice, 0#Citas|1#Cita|2#Citas} (desde Crossref)
 metrics.citations.dialog.header=Citas del dataset
 metrics.citations.dialog.help=Las citas de este dataset son recolectadas desde Crossref mediante DataCite usando el estándar Make Data Count. Si quiere más información sobre estas estadísticas, puede mirar en la <a href="{0}/{1}/user/dataset-management.html#dataset-metrics-and-make-data-count" title="Dataset Metrics and Make Data Count - Dataverse User Guide" target="_blank">Guía de Usuario</a>.
 metrics.citations.dialog.empty=Lo siento, no se encontraron citas.
@@ -1679,7 +1679,7 @@ dataset.compute.computeBatchList=Listar procesos por lotes
 dataset.compute.computeBatchAdd=Añadir a procesos por lotes
 dataset.compute.computeBatchClear=Limpiar procesos por lotes
 dataset.compute.computeBatchRemove=Borrar de procesos por lotes
-dataset.compute.computeBatchChange=Change Compute Batch
+dataset.compute.computeBatchChange=Cambiar lotes de trabajo
 dataset.compute.computeBatchCompute=Procesar lotes de trabajo
 dataset.compute.computeBatch.success=Se ha actualizado la lista de datasets de su proceso por lotes.
 dataset.compute.computeBatch.failure=Se ha actualizado la lista de datasets de su proceso por lotes. Puede volver a intentarlo
@@ -1754,10 +1754,10 @@ dataset.message.submit.remind.draft=Cuando está listo para compartir, <b>envíe
 dataset.message.publish.remind.draft.filePage=Cuando esté listo para compartir, por favor <a href="/dataset.xhtml?persistentId={0}">vaya a la página del dataset</a> para publicarlo de forma que otros puedan ver estos cambios.
 dataset.message.submit.remind.draft.filePage=Cuando esté listo para compartir, por favor <a href="/dataset.xhtml?persistentId={0}">vaya a la página del dataset</a> para enviarlo a revisión.
 dataset.message.publishSuccess=Este dataset se ha publicado.
-dataset.message.publishGlobusFailure.details=Could not publish Globus data.
-dataset.message.publishGlobusFailure=Error with publishing data.
-dataset.message.GlobusError=Cannot go to Globus.
-dataset.message.only.authenticatedUsers=S\u00f3lo los usuarios autenticados pueden liberar datasets.
+dataset.message.publishGlobusFailure.details=No se puede publicar los datos de Globus.
+dataset.message.publishGlobusFailure=Error publicando los datos.
+dataset.message.GlobusError=No se puede ir a Globus.
+dataset.message.only.authenticatedUsers=Solo los usuarios autenticados pueden liberar datasets.
 dataset.message.deleteSuccess=Este dataset se ha eliminado.
 dataset.message.bulkFileUpdateSuccess=Se han actualizado los ficheros seleccionados.
 dataset.message.bulkFileDeleteSuccess=Se han borrado uno o más ficheros.
@@ -1865,7 +1865,7 @@ file.display.table=Tabla
 file.display.tree=Árbol
 file.count.label=Número de ficheros
 file.count.one=1 fichero
-file.count={0} a {1} de {2} {2, choice, 0#Ficheros|1#Fichero|2#Ficheros}
+file.count={0} a {1} de {2} {2, choice, 0#Ficheros|1#Fichero|2#Ficheros}.
 file.count.shown={0} {0, choice, 0#Ficheros seleccionados|1#Fichero|2#Ficheros}
 file.clearSelection=Limpiar la selección
 file.zip.download.exceeds.limit=El tamaño total de los ficheros seleccionados ({0}) para la descarga excede el tamaño máximo de {1}. Puede eliminar de la selección algunos ficheros para continuar.
@@ -1921,10 +1921,10 @@ file.optionsBtn.header.edit=Opciones de edición
 file.optionsBtn.header.configure=Opciones de configuración
 file.editBtn=Editar Fichero
 file.contactBtn=Contactar propietario
-file.shareBtn=Share
-file.share.title=Share File
-file.share.tip=Share this file on your favorite social media networks.
-file.share.text=View this file.
+file.shareBtn=Compartir
+file.share.title=Compartir fichero
+file.share.tip=Compartir este fichero en sus redes sociales favoritas.
+file.share.text=Ver este fichero.
 file.bulkUpdate=Editar ficheros en bloque
 file.uploadFiles=Subir ficheros
 file.replaceFile=Sustituir fichero
@@ -1936,8 +1936,8 @@ file.replace=Sustituir
 file.alreadyDeleted.warning.header=Editar fichero
 file.alreadyDeleted.previous.warningMessage=Este fichero ha sido eliminado (o sustituído) en la versión actual. No puede editarse.
 file.delete=Eliminar
-file.delete.duplicate.multiple=Delete Duplicate Files
-file.delete.duplicate.single=Delete Duplicate File
+file.delete.duplicate.multiple=Eliminar ficheros duplicados
+file.delete.duplicate.single=Eliminar fichero duplicado
 file.metadata=Metadatos
 file.deleted.success=Los ficheros "{0}" serán eliminados de forma permanente de esta versión de este dataset una vez pulses el botón Guardar cambios.
 file.deleted.replacement.success=El sustituto de este fichero se ha eliminado.
@@ -2052,9 +2052,9 @@ file.ingestFailed.header=El fichero está disponible únicamente en el formato o
 file.ingestFailed.message=La <a href="{0}/{1}/user/dataset-management.html#tabular-data-files" title="Ficheros de datos tabulares - Guía del usuario de Dataverse" target="_blank">transformación de ficheros tabulares</a> falló.
 file.downloadBtn.format.all=Todos los formatos de ficheros + información
 file.downloadBtn.format.tab=Delimitados por tabuladores
-file.downloadBtn.format.original=Formato de fichero original ({0})
-file.downloadBtn.format.rdata=Formato RData
-file.downloadBtn.format.var=Variable Metadata
+file.downloadBtn.format.original={0} (Formato del fichero original)
+file.downloadBtn.format.rdata=RData 
+file.downloadBtn.format.var=DDI Codebook v2
 file.downloadBtn.format.citation=Citas de fichero de datos
 file.download.filetype.unknown=Formato del fichero original
 file.more.information.link=Enlace a más información sobre el fichero sobre 
@@ -2242,11 +2242,11 @@ file.requestAccess.notAllowed=No se aceptan peticiones de acceso en este Dataset
 file.requestAccess.notAllowed.alreadyHasDownloadPermisssion=El usuario ya tiene permisos para descargar este fichero. Petición de acceso inválida.
 file.requestAccess.notAllowed.embargoed=No se permite el acceso a ficheros con un embargo activo. Solicitud de acceso no válida.
 file.search.placeholder=Buscar en estos ficheros de datos...
-file.results.filter=Filtrar por
-file.results.filter.type=Tipo de archivo:
+file.results.filter=Filtrado por
+file.results.filter.type=Tipo de fichero:
 file.results.filter.access=Acceso:
-file.results.filter.tag=Etiqueta de archivo:
-file.results.filter.all=Todos
+file.results.filter.tag=Etiqueta de fichero:
+file.results.filter.all=Todo
 file.results.btn.sort=Ordenar
 file.results.btn.sort.option.nameAZ=Nombre (A-Z)
 file.results.btn.sort.option.nameZA=Nombre (Z-A)
@@ -2264,7 +2264,7 @@ file.configure.Button=Configurar
 
 file.remotelyStored=Este fichero se almacena de forma remota- Pinche aquí si necesita más información
 
-file.auxfiles.download.header=Download Auxiliary Files
+file.auxfiles.download.header=Descargar ficheros auxiliares
 # These types correspond to the AuxiliaryFile.Type enum.
 file.auxfiles.types.DP=Estadísticas privadas diferenciales
 file.auxfiles.types.NcML=XML desde NetCDF/HDF5 (NcML)
@@ -2313,7 +2313,7 @@ dataset.thumbnailsAndWidget.thumbnailImage.selectAvailable.title=Seleccione una 
 dataset.thumbnailsAndWidget.thumbnailImage.uploadNew=Subir fichero nuevo
 dataset.thumbnailsAndWidget.thumbnailImage.uploadNew.title=Subir una imagen como miniatura del dataset, que no se almacenará con los ficheros de datos pertenecientes a su dataset.
 dataset.thumbnailsAndWidget.thumbnailImage.upload=Subir imagen
-dataset.thumbnailsAndWidget.thumbnailImage.upload.invalidMsg=The image could not be uploaded. Please try again with a JPG, TIF, or PNG file.
+dataset.thumbnailsAndWidget.thumbnailImage.upload.invalidMsg=No se puede subir la imagen. Puede intentarlo de nuevo con un fichero JPG o PNG.
 dataset.thumbnailsAndWidget.thumbnailImage.alt=Miniatura seleccionada para el dataset
 dataset.thumbnailsAndWidget.success=Miniatura del dataset actualizada.
 dataset.thumbnailsAndWidget.removeThumbnail=Borrar miniatura.
@@ -2347,14 +2347,14 @@ file.previewTab.presentation=Herramienta de vista previa de ficheros
 file.previewTab.openBtn=Abrir en una ventana nueva
 file.previewTab.exploreBtn={0} en {1}
 
-file.queryTab.tool.open=Open
-file.queryTab.header=Query
-file.queryTab.presentation=File Query Tool
-file.queryTab.openBtn=Open in New Window
+file.queryTab.tool.open=Abrir
+file.queryTab.header=Lanzar pregunta
+file.queryTab.presentation=Herramienta de queries a ficheros
+file.queryTab.openBtn=Abrir en una nueva ventana
 file.queryTab.queryBtn={0} on {1}
 
 #if you don't have a tool selected
-file.toolTab.header=File Tools
+file.toolTab.header=Herramientas de ficheros
 
 file.metadataTab.fileMetadata.header=Metadatos del fichero
 file.metadataTab.fileMetadata.persistentid.label=Fichero de datos con el ID persistente
@@ -2390,7 +2390,7 @@ file.versionDifferences.fileRestricted=Restringido
 file.versionDifferences.fileUnrestricted=Sin restricciones
 file.versionDifferences.fileGroupTitle=Fichero
 
-file.anonymized.authorsWithheld=Author name(s) withheld
+file.anonymized.authorsWithheld=Nombre(s) de Autor retenido(s)
 # File Ingest
 ingest.csv.invalidHeader=Cabecera de fila inválida. Una de las celdas está vacía.
 ingest.csv.lineMismatch=¡No coincide el número de líneas en el paso inicial y el final!, se encontraron {0} en el primer paso, pero {1} en el segundo.
@@ -2416,9 +2416,9 @@ file.metadata.datafiletag.not_tabular=No puede añadir etiquetas de datos tabula
 file.metadata.filedirectory.invalidCharacters=El nombre del directorio no puede tener caracteres inválidos. Los caracteres válidos son a-Z, 0-9, '_', '-', '.', '\\', '/' y ' ' (espacio blanco).
 
 # File Edit Success
-file.message.editSuccess=Este fichero se ha actualizado.
-file.message.deleteSuccess=Este fichero se ha borrado.
-file.message.replaceSuccess=Este fichero se ha sustituido.
+file.message.editSuccess=El fichero se ha actualizado.
+file.message.deleteSuccess=El fichero se ha borrado.
+file.message.replaceSuccess=El fichero se ha sustituido.
 
 # File Add/Replace operation messages
 file.add.count_exceeds_limit=El número de ficheros no puede superar el máximo permitido para este dataset ({0}).
@@ -2462,8 +2462,8 @@ file.addreplace.error.existing_file_to_replace_is_null=El fichero sustituto no p
 file.addreplace.error.existing_file_to_replace_not_in_dataset=El fichero a sustituir no pertenece a este dataset.
 file.addreplace.error.existing_file_not_in_latest_published_version=No puede sustituir un fichero que no esté en la versión más reciente publicada en el dataset. (El fichero está sin publicar o fue borrado en una versión anterior.)
 file.addreplace.content_type.header=Tipo de fichero distinto
-file.addreplace.already_exists.header=Duplicate File Uploaded
-file.addreplace.already_exists.header.multiple=Duplicate Files Uploaded
+file.addreplace.already_exists.header=Subido fichero duplicado
+file.addreplace.already_exists.header.multiple=Subidos ficheros duplicados
 file.addreplace.error.replace.new_file_has_different_content_type=El fichero original ({0}) y su sustituto ({1}) son de distinto tipo.
 file.addreplace.error.replace.new_file_same_as_replacement=¡Error!. No puede sustituir un fichero por otro con el mismo contenido.
 file.addreplace.error.unpublished_file_cannot_be_replaced=No puede sustituir un fichero sin publicar. puede borrarlo en vez de sustituirlo.
@@ -2517,7 +2517,7 @@ dataset.replicationDataFor=Replicación de datos para:
 dataset.additionalEntry=Entrada Adicional
 
 #externaltools
-externaltools.enable.browser.popups=You must enable popups in your browser to open external tools in a new window or tab.
+externaltools.enable.browser.popups=Debe de habilitar popups en su navegador para abrir las herramientas externas en una ventana o tab nuevos.
 
 #mydata_fragment.xhtml
 mydataFragment.infoAccess=Aquí puedes ver todos los dataverses, datasets y ficheros a los que tienes acceso. Puedes filtrarlos por estado de publicación y rol del usuario.
@@ -2526,7 +2526,7 @@ mydataFragment.publicationStatus=Estado de la publicación
 mydataFragment.roles=Roles
 mydataFragment.resultsByUserName=Resultados por nombre de usuario
 mydataFragment.search=Buscar en mis datos...
-mydataFragment.validity=Metadata validity
+mydataFragment.validity=Validez de metadatos
 mydata.result=Resultado
 mydata.results=Resultados
 mydata.viewnext=Ver siguiente
@@ -2634,19 +2634,19 @@ dataset.version.file.changed=Ficheros (Ficheros de metadatos cambiados: {0}
 dataset.version.file.changed2=; Ficheros de metadatos cambiados: {0}
 dataset.version.variablemetadata.changed=Variable de metadatos (Cambiar la variable: {0}
 dataset.version.variablemetadata.changed2=; Cambiada la variable de los metadatos: {0}
-dataset.version.compare.incorrect.order=Compare requires the older dataset version to be listed first.
+dataset.version.compare.incorrect.order=La comparación necesita que la versión más antigua del dataset esté primero en la lista.
 
 #DataversePage.java
 dataverse.item.required=Obligatorio
-dataverse.item.required.conditional=Conditionally Required
+dataverse.item.required.conditional=Obligatorio con condiciones
 dataverse.item.optional=Opcional
 dataverse.item.hidden=Oculto
 dataverse.edit.msg=Editar dataverse
-dataverse.edit.detailmsg=Edite su dataverse y haga click en Guardar cambios. Los asteriscos indican los campos obligatorios.
+dataverse.edit.detailmsg=Edite su dataverse y pulse en Guardar cambios. Los asteriscos indican los campos obligatorios.
 dataverse.feature.update=Los dataverses destacados de este dataverse se han actualizado.
 dataverse.link.select=Debe seleccionar un dataverse enlazado.
 dataset.noSelectedDataverse.header=Seleccione al menos un dataverse
-dataverse.link.user=S\u00f3lo los usuarios identificados pueden enlazar a un dataverse.
+dataverse.link.user=Solo los usuarios identificados pueden enlazar a un dataverse.
 dataverse.link.error=No se puede enlazar {0} a {1}. Ha ocurrido un error interno.
 dataverse.search.user=Solo los usuarios identificados pueden guardar una búsqueda.
 dataverse.alias=alias
@@ -2771,8 +2771,8 @@ permission.permissionsMissing=Los permisos {0} se han perdido.
 permission.CannotAssigntDefaultPermissions=No se pueden asignar los permisos por defecto.
 permission.default.contributor.role.none.decription=Una persona sin permisos en el dataset recién creado. No se recomienda para un dataset con aportaciones de humanos.
 permission.default.contributor.role.none.name=Ninguno
-permission.role.must.be.created.by.superuser=Roles can only be created or edited by superusers.
-permission.role.not.created.alias.already.exists=Role with this alias already exists.
+permission.role.must.be.created.by.superuser=los roles solo pueden ser creados o editados por supuerusuarios.
+permission.role.not.created.alias.already.exists=Un rol con ese alias ya existe.
 
 #ManageFilePermissionsPage.java
 permission.roleNotAbleToBeRemoved=No se pudo eliminar la asignación del rol.
@@ -2796,7 +2796,7 @@ dataverse.manageGroups.save.fail=Fallo al guardar el grupo.
 template.makeDefault=Se ha seleccionado la plantilla como plantilla por defecto para este dataverse
 template.unselectDefault=Se ha eliminado la plantilla como plantillas por defecto para este dataverse
 template.clone=Se ha copiado la plantilla
-template.clone.error=Template could not be copied.
+template.clone.error=No se puede copiar la plantilla.
 template.delete=Se ha borrado la plantilla
 template.delete.error=La plantilla del dataset no se puede eliminar.
 template.update=Los datos de la plantilla se han actualizado.
@@ -2946,7 +2946,7 @@ access.api.requestAccess.failure.guestbookresponseMissingRequired=La respuesta d
 access.api.requestAccess.failure.guestbookresponseInvalidOption=La opción de respuesta a la pregunta personalizada del libro de visitas no es válida ({0}).
 access.api.requestAccess.failure.guestbookresponseQuestionIdNotFound=No se encontró la pregunta personalizada del libro de visitas con ID {0}.
 
-access.api.requestAccess.noKey=You must provide a key to request access to a file.
+access.api.requestAccess.noKey=Debe proporcionar una clave para solicitar el acceso a un fichero.
 access.api.requestAccess.fileNotFound=No se encuentra un fichero de datos con id {0}.
 access.api.requestAccess.invalidRequest=Este fichero ya está disponible para que lo descargue o usted tiene una solicitud pendiente
 access.api.requestAccess.requestsNotAccepted=No se aceptan solicitudes de acceso en el Dataset.
